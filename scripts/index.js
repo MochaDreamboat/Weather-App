@@ -1,3 +1,7 @@
+// Fetches weather data (city, conditions, temperature, humidity)
+// from API and returns data in an object.
+
+// To be returned UI generating function displaying data to user.
 function getWeatherResponse () {
 
     let weatherInfo = fetch('http://api.openweathermap.org/data/2.5/weather?q=Addison&APPID=7498ebf6859f10448d9e3958cea02c93');
@@ -21,3 +25,4 @@ function getWeatherResponse () {
 }
 
 getWeatherResponse();
+
