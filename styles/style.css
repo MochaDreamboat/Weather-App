@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+
 * {
-    display: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: white;
 }
 
-h1 {
-    color: red;
+header {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#searchbar input, #searchbar button {
+    border-style: solid;
+    border-color: white;
+    border-radius: 7px;
+}
+main {
+    height: calc(75vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Weather Box styling */
+#weather-information {
+    padding: 2rem;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: white;
+    width: 35rem;
+    height: 25rem;
 }
