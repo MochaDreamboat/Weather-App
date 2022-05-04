@@ -18,7 +18,14 @@ header {
     border-style: solid;
     border-color: white;
     border-radius: 7px;
+    padding: 2px 5px;
+    margin: 10px 5px;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
 main {
     height: calc(75vh);
     display: flex;
