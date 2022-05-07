@@ -1,3 +1,5 @@
+import { displayWeatherData } from "./WeatherUI.js";
+
 const searchButton = document.getElementById('search');
 
 
@@ -29,8 +31,7 @@ function getWeatherResponse(searchedCity) {
         })
         .then((response) => {
             let userWeatherData = new WeatherInfo(response);
-            console.log(userWeatherData);
-            return userWeatherData;
+            displayWeatherData(userWeatherData);
         })
         .catch(err => console.log(err));
 }
@@ -39,4 +40,3 @@ searchButton.addEventListener('click', () => {
     let query = document.getElementById('query').value;
     getWeatherResponse(query);
 });
-
