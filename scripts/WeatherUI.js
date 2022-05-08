@@ -1,8 +1,9 @@
 // Function for implementing received weather object's data to user interface.
+export {
+    displayWeatherData
+};
 
-export { displayWeatherData };
-
-function displayWeatherData (data) {
+function displayWeatherData(data) {
     // Targets weather elements in DOM...
     let city = document.getElementById('city');
     // Find a way to associate conditions with respective icon...
@@ -20,7 +21,7 @@ function displayWeatherData (data) {
     humidity.textContent = `Humidity: ${data.humidity}`;
 
     // Switch statement for setting weather icon based on conditions data.
-    function setIcon (conditions) {
+    function setIcon(conditions) {
         console.log(conditions)
         switch (conditions) {
             case ('clear sky'):
@@ -40,6 +41,6 @@ function displayWeatherData (data) {
                 return 'sources/weather_icons/mist.svg'
             default:
                 console.log('Sorry Charlie :(');
-        }   
+        }
     };
 };
