@@ -18,7 +18,7 @@ function WeatherInfo(data) {
 }
 
 function getWeatherResponse(searchedCity) {
-    let weatherInfo = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&APPID=7498ebf6859f10448d9e3958cea02c93`);
+    let weatherInfo = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&APPID=7498ebf6859f10448d9e3958cea02c93&units=imperial`);
 
     weatherInfo
         .then(response => {

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wally's Weather</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/WeatherUI.js" type="module" defer>
+    </script><script src="./scripts/index.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -20,13 +21,16 @@
     <main>
 
         <section id="weather-information">
-            <div id="info">
-                <h1>Addison</h1>
-                <h4>Conditions: </h4>
-                <h4>Temperature: </h4>
-                <h4>Humidity: </h4>
-                <h4>UV Index: </h4>
-            </div>
+                <div class="main-info">
+                    <h1 id="city">Addison</h1>
+                    <h3 style="text-align: center" id="temperature">24°F</h3>
+                </div>
+                <img id="conditions-icon" src="sources/weather_icons/cloudy.svg" alt="">
+                <div id="text-info">
+                    <h4 id="conditions">Conditions: </h4>
+                    <h4 id="humidity">Humidity: </h4>
+                    <h4 id="uv">UV Index: </h4>
+                </div>
         </section>
     </main>
     <footer></footer>
